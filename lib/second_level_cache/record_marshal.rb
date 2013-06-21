@@ -23,9 +23,5 @@ module RecordMarshal
       record.init_with('attributes' => serialized[1])
       record
     end
-
-    def load_multi(serializeds)
-      serializeds.map{|serialized| load(serialized)}
-    end
   end
 end
